@@ -4,10 +4,10 @@ defmodule Artificery.Console.Color do
   defmodule ANSI do
     @moduledoc false
 
-    require IO.ANSI.Sequence
-    import IO.ANSI.Sequence
+    #require IO.ANSI.Sequence
+    #import IO.ANSI.Sequence
 
-    defsequence :grey, 37
+    #defsequence :grey, 37
 
     @ansi_pattern Enum.join([
         "[\\e\\x{c29B}][[\\]()#;?]*(?:(?:(?:[a-zA-Z\\d]*(?:;[a-zA-Z\\d]*)*)?\\a)",
